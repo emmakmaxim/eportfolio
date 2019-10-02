@@ -1,0 +1,648 @@
+html, body{
+  height: 100%;
+}
+
+ul, li {
+   margin: 0;
+   padding: 0;
+ }
+
+ @font-face {
+    font-family: Walkway;
+    src: url("fonts/Walkway.ttf");
+}
+
+@font-face {
+   font-family: Arista;
+   src: url("fonts/Arista2.0-light.ttf");
+}
+
+ a:hover {
+   text-decoration: none;
+}
+
+#em-header{
+  color: #20124d;
+  font-size: 48px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+  margin: 20px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.em-header-lower{
+  font-size: 40px;
+}
+
+.navbar{
+  z-index: 3;
+  background-color: white;
+}
+
+.nav-item{
+  color: #303030;
+  display:inline-block;
+  font-size: 32px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+}
+
+#active-nav{
+  font-weight: bold;
+}
+
+.fed{
+  font-size:66px;
+  margin-left: 100px;
+  margin-top: 5%;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-right: 5%;
+
+}
+
+.uxp{
+  font-size: 72px;
+  margin-left: 20px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin-right: 5%;
+}
+
+#nav-underline1{
+  height: 2px;
+  background-color: #20124d;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 0%;
+  position: absolute;
+  z-index: 2;
+}
+
+#nav-underline2{
+  height: 2px;
+  background-color: #3C2083;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 33.33333%;
+  position: absolute;
+  z-index: 2;
+}
+
+#nav-underline3{
+  height: 2px;
+  background-color: #6147a3;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 66.66666%;
+  position: absolute;
+  z-index: 2;
+}
+
+.underline1{
+  height: 2px;
+  background-color: #20124d;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 0%;
+  z-index: 2;
+}
+
+.underline2{
+  height: 2px;
+  background-color: #3C2083;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 33.33333%;
+  z-index: 2;
+}
+
+.underline3{
+  height: 2px;
+  background-color: #6147a3;
+  width: 33.33333%;
+  display: inline-block;
+
+  left: 66.66666%;
+  z-index: 2;
+}
+
+
+#plus-background{
+  background-color: #3C2083;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 72px;
+  height: 72px;
+  margin-left: 100px;
+}
+
+.portfolio-section{
+  width: 33.33333%;
+  display: inline-block;
+  vertical-align: top;
+  bottom: 0;
+}
+
+.portfolio-section h2{
+  color: white;
+  font-size: 54px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+}
+
+.ps-tabs{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ps-tabs h1{
+  color: white;
+  font-size: 12px;
+}
+
+#ps1{
+  left: 0;
+  top: 130px;
+  width: 33.33333%;
+  height: 100vh;
+  position: absolute;
+  padding: 3% 2%;
+  z-index: 1;
+}
+
+#ps1-tab{
+  left: 0;
+  top: 130px;
+  width: 2.5%;
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+#ps2{
+  left: 0;
+  width: 33.33333%;
+  height: 100vh;
+  top: 130px;
+  position: absolute;
+  padding: 3% 2%;
+  z-index: 1;
+}
+
+#ps2-tab{
+  left: 0;
+  width: 2.5%;
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+#ps3{
+  left: 0;
+  top: 130px;
+  width: 33.33333%;
+  height: 100vh;
+  position: absolute;
+  padding: 3% 2%;
+  z-index: 1;
+}
+
+#ps3-tab{
+  left: 0;
+  width: 2.5%;
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.laptop-image{
+  position: relative;
+  top: 0;
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-shadow{
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small-mobile-image{
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  max-width: 20%;
+  max-width: 20%;
+}
+
+.full-mobile-image{
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.standard-portfolio-image{
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.device-images{
+  position: relative;
+  max-width: 95%;
+  left: 0;
+  top: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+
+.w-screen{
+  margin-left: 5%;
+}
+
+#development-container{
+  overflow-y: auto;
+  height: 100vh;
+}
+
+#design-container{
+  overflow-y: auto;
+  height: 100vh;
+}
+
+#research-container{
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.portfolio-caption h2{
+  font-size: 24px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+}
+
+.portfolio-caption p{
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.resume-section{
+  padding: 50px;
+  color: white;
+}
+
+.resume-section h2{
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  padding-bottom: 24px;
+}
+
+.resume-section p{
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.resume-section h3{
+  font-size: 36px;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.resume-section ul{
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  list-style-position: inside;
+  list-style-type: none;
+  line-height: 22px;
+}
+
+.resume-section li{
+  padding-bottom: 16px;
+}
+
+.contact-form{
+  width: 100%;
+  padding: 5%;
+  font-family: Walkway, Helvetica, Arial, sans-serif;
+}
+
+.contact-form p{
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.contact-form p{
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.contact-form legend{
+  font-size: 36px;
+}
+
+.contact-form label{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.btn{
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  background-color: #3C2083;
+  color: white;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 1px #3C2083;
+  margin-bottom: 16px;
+}
+
+.btn:hover{
+  background-color: #6147a3;
+}
+
+.btn:active{
+  background-color: #3C2083;
+}
+
+.dates-employed{
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 38px;
+  font-family: Arista, Helvetica, Arial, sans-serif;
+}
+
+.job-description h3{
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.row{
+  width: 100%;
+}
+
+.divider{
+  margin: 40px auto;
+  width: 80%;
+  align-items: center;
+}
+
+.top-row{
+  padding-top: 40px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding-right: 0px;
+}
+
+.job{
+  padding-top: 28px;
+}
+
+#my-recipes{
+  display: none;
+  margin-top: 3%;
+  overflow-y: auto;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#linkedin-container{
+  background-color: #3C2083;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
+
+#linkedin-container img{
+  width: 70%;
+  height: auto;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width : 500px) {
+  #ps1, #ps2, #ps3{
+    left: 0;
+    width: 100%;
+    height: 33.33333%;
+    padding-top: 0;
+  }
+
+  #ps1{
+    top: 70px;
+  }
+
+  #ps1Tab, #ps2Tab, #ps3Tab{
+    display: none;
+  }
+
+  .portfolio-section{
+    display: flex;
+    align-items: center;
+  }
+  .portfolio-section h2{
+    font-size: 28px;
+  }
+  .nav{
+    float: left;
+  }
+  #em-header{
+    font-size: 36px;
+    margin: 0;
+  }
+    .em-header-lower{
+    font-size: 32px;
+  }
+  .fed, .uxp{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .fed{
+    margin-top: 100px;
+  }
+
+  #plus-background{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    margin-left: 20px;
+  }
+  #plus-background img{
+    width: 24px;
+    height: 24px;
+  }
+  /*.ps-tabs{
+      display: none;
+  }*/
+  #development-container, #design-container, #research-container{
+    overflow-y: initial;
+  }
+
+  .laptop-image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .col-sm-4{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .job-description{
+    padding-left: 15px;
+    padding-top: 24px;
+  }
+
+  .resume-section h2{
+    font-size: 40px;
+  }
+
+  .resume-section ul{
+    font-size: 16px;
+  }
+  .resume-section{
+    padding:20px;
+  }
+
+  .dates-employed{
+    font-size: 36px;
+    line-height: 33px;
+  }
+  #linkedin-container{
+    background-color: #3C2083;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+  }
+  #linkedin-container img{
+    width: 80%;
+    height: 80%;
+    padding: 0;
+  }
+  .contact-form p{
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+  }
+
+  .contact-form h2{
+    font-size: 36px;
+  }
+
+  .contact-form label{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .nav-item{
+    font-size: 24px;
+  }
+  .row{
+    margin: 0;
+  }
+  .divider{
+    margin:20px 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .portfolio-caption{
+    padding-top: 12px;
+  }
+  .top-row{
+    margin-top: 20px;
+    padding-top: 40px;
+  }
+  .w-screen{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-height : 700px){
+  /*.ps-tabs{
+      display: none;
+  }*/
+}
+
+@media only screen and (max-width : 1000px){
+  .job-description{
+      margin-left: 30px;
+  }
+
+  .dates-employed{
+      margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width : 1000px){
+  .job-description{
+      margin-left: 30px;
+  }
+
+  .dates-employed{
+      margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width : 600px){
+  .job-description{
+      margin-left: 0px;
+      padding-left: 0px;
+  }
+
+  .dates-employed{
+      margin-left:0px;
+      padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 915px) and (min-width: 500px) {
+  .uxp{
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+  .uxp, .fed{
+    font-size: 54px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 870px) {
+  .portfolio-section h2{
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 869px) and (min-width: 500px) {
+  .portfolio-section h2{
+    font-size: 22px;
+  }
+}

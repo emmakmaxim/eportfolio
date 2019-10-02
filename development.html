@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Emma Maxim</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet-em.css">
+  </head>
+  <body onload="javascript:document.getElementById('ps2-tab').style.width='4%'; document.getElementById('ps2-tab').style.zIndex='1';">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a id="em-header" href="index.html">E<span class="em-header-lower">MMA</span> M<span class="em-header-lower">AXIM</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end navbar-z" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-item nav-link" href="resume.html">Resume</a>
+          <a class="nav-item nav-link" href="contact.php">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="nav-underline1"></div><div id="nav-underline2"></div><div id="nav-underline3"></div>
+
+    <div>
+      <a href="ux-design.html"><div class="ps-tabs" id="ps1-tab" style="background-color: #20124d;"><h1>DESIGN</h1></div></a><!--
+      --><a href="development.html"><div class="ps-tabs" id="ps2-tab" style="background-color: #3C2083;"><h1>DEVELOPMENT</h1></div></a><!--
+      --><a href="research.html"><div class="ps-tabs" id="ps3-tab" style="background-color: #6147a3;"><h1>RESEARCH</h1></div></a>
+    </div>
+
+      <div class="w-screen" id="development-container" onclick="clearApp()">
+        <div class="row top-row">
+          <div class="col-sm-8">
+            <div class="device-images">
+              <img class="laptop-image" src="images/techbe-laptop.png" alt="A screenshot of the TechBE website in a laptop browser"/>
+              <img class="small-mobile-image" src="images/techbe-mobile.png" alt="A screenshot of the TechBE website in a mobile phone">
+            </div>
+           </div>
+          <div class="col-sm-4">
+            <div class="portfolio-caption">
+              <h2>TechBE company website<br/>(academic project)</h2>
+              <p>I was given the opportunity for a final project during my Mobile Application Development Certificate to create an original responsive, accessible website. I designed and developed a website that represents a fictitious web application development company. It was developed using a combination of highly customised Bootstrap, original HTML and CSS, and some JavaScript.</p>
+              <button class="btn mb-2" onclick=" window.open('techbe/index.html','_blank')">Visit website</button>
+            </div>
+          </div>
+        </div>
+        <div class="row divider">
+          <div class="underline1"></div><div class="underline2"></div><div class="underline3"></div>
+        </div>
+        <div class="row top-row">
+          <div class="col-sm-8" style="text-align:center;">
+              <img class="standard-portfolio-image" src="images/myrecipes.png" alt="A screenshot of the MyRecipes mobile application in a mobile phone">
+          </div>
+          <div class="col-sm-4">
+            <div class="portfolio-caption">
+              <h2>My Recipes mobile app<br/>(academic project)</h2>
+              <p>I was given the opportunity for a final project during my Mobile Application Development Certificate to create an original mobile app. I decided to create an app that allows a user to save recipes on their device and access them at a later time.</p>
+              <p>The app includes a SQLite database that I designed, a streamlined visual aesthetic, and a clear user workflow. The version of the app that you can try out by clicking the button below was coded for Android.</p>
+              <button class="btn mb-2" onclick=" window.open('myrecipes.html','_blank')">Try app</button>
+            </div>
+          </div>
+        </div>
+        <div class="row divider">
+          <div class="underline1"></div><div class="underline2"></div><div class="underline3"></div>
+        </div>
+        <div class="row top-row">
+          <div class="col-sm-8">
+            <div class="device-images">
+              <img class="laptop-image" src="images/eportfolio-laptop.png" alt="A screenshot of Emma Maxim's professional website in a laptop browser">
+              <img class="small-mobile-image" src="images/eportfolio-mobile.png" alt="A screenshot of Emma Maxim's professional website in a mobile phone">
+            </div>
+           </div>
+          <div class="col-sm-4">
+            <div class="portfolio-caption">
+              <h2>Emma Maxim ePortfolio<br/>(personal project)</h2>
+              <p>I designed this portfolio website (that you are currently visiting!) with specific requirements in mind. I wanted to challenge myself to build something visually appealing with minimal reliance on images and logos. I used colour, fonts, space, animation, and geometry to achieve my vision.</p>
+              <p>This website has been coded using HTML, CSS, and vanilla JavaScript, plus a touch of jQuery and PHP. I used Bootstrap for certain responsive elements, most notably the navigation bar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+          var $ps1Tab = $('#ps1-tab');
+          var $ps2Tab = $('#ps2-tab');
+          var $ps3Tab = $('#ps3-tab');
+          var $devCont = $('#development-container');
+          var vh = $(window).height();
+          var tabHeight = (vh - 130) / 3;
+          var ps2TabTop = tabHeight + 130;
+          var ps3TabTop = tabHeight + tabHeight + 130;
+          var devContHeight = tabHeight * 3 - 42;
+          $ps2Tab.css({ top: ps2TabTop + 'px' });
+          $ps3Tab.css({ top: ps3TabTop + 'px' });
+          $ps1Tab.css({ height: tabHeight + 'px' });
+          $ps2Tab.css({ height: tabHeight + 'px' });
+          $ps3Tab.css({ height: tabHeight + 'px' });
+          $devCont.css({ height: devContHeight + 'px' });
+    });
+    </script>
+    <script src="javascript/main.js"></script>
+
+  </body>
+</html>
